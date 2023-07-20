@@ -1,0 +1,472 @@
+/* 
+        Reset Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Global Styles */
+        body {
+            font-size: 100%;
+            font-variant: small-caps slashed-zero;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Navigation Styles */
+        nav {
+            margin-bottom: 20px;
+            background-color: #444;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        
+        /* Main Content Styles */
+        main {
+            margin: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        .product p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #4e92f1;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 20px;
+            }
+            
+            .product {
+                width: 100%;
+            }
+        }
+        .Banner {
+            width: 1500px; 
+            height: 450px;
+          }
+          
+        /* .image{
+            width: 500px; 
+            height: 500px;
+        }
+        .product  {
+            width: 500px; 
+            height: 500px ; 
+          } */
+    
+    /* search bar     */
+
+    body *{
+  
+      margin: 0 auto;
+      padding: 0;
+      z-index: 100;
+    }
+    .input__container {
+        position: relative;
+        background: rgba(255, 255, 255, 0.664);
+        padding: 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 22px;
+        max-width: 300px;
+        transition: transform 400ms;
+        transform-style: preserve-3d;
+        transform: rotateX(15deg) rotateY(-20deg);
+        perspective: 500px;
+      }
+      
+      .shadow__input {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        filter: blur(30px);
+        border-radius: 20px;
+        background-color: #999cff;
+        background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+          radial-gradient(at 74% 68%, hsla(235,69%,77%,1) 0px, transparent 50%),
+          radial-gradient(at 64% 79%, hsla(284,72%,73%,1) 0px, transparent 50%),
+          radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
+          radial-gradient(at 90% 65%, hsla(153,70%,64%,1) 0px, transparent 50%),
+          radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
+          radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
+      }
+      
+      .input__button__shadow {
+        cursor: pointer;
+        border: none;
+        background: none;
+        transition: transform 400ms, background 400ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        padding: 5px;
+      }
+      
+      .input__button__shadow:hover {
+        background: rgba(255, 255, 255, 0.411);
+      }
+      
+      .input__search {
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        padding: 8px;
+        position: relative;
+      }
+
+      /* MENU BUTTON */
+      .btn {
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        background: #040f16;
+        color: #f5f5f5;
+      }
+      
+      .btn:hover {
+        box-shadow: 0 0 20px 0px #2e2e2e3a;
+      }
+      
+      .btn .icon {
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+      }
+      
+      .btn .text {
+        transform: translateX(55px);
+      }
+      
+      .btn:hover .icon {
+        width: 175px;
+      }
+      
+      .btn:hover .text {
+        transition: all 0.5s;
+        opacity: 0;
+      }
+      
+      .btn:focus {
+        outline: none;
+      }
+      
+      .btn:active .icon {
+        transform: scale(0.85);
+      }
+
+     /* CATTEGORIS SHOWING */
+
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: #0D1117;
+        justify-content: center;
+        border-radius: 5px
+      }
+      
+      .value {
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        color: white;
+        display: flex;
+        position: relative;
+        gap: 5px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      .value:not(:active):hover,
+      .value:focus {
+        background-color: #21262C;
+      }
+      
+      .value:focus,
+      .value:active {
+        background-color: #1A1F24;
+        outline: none;
+      }
+      
+      .value::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        width: 5px;
+        height: 80%;
+        background-color: #2F81F7;
+        border-radius: 5px;
+        opacity: 0;
+      }
+      
+      .value:focus::before,
+      .value:active::before {
+        opacity: 1;
+      }
+      
+      .value svg {
+        width: 15px
+      }
+      
+      .input:hover > :not(.value:hover) {
+        transition: 300ms;
+        filter: blur(1px);
+        transform: scale(0.95,0.95);
+      }
+
+      /* DROPDOWN */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(184, 186, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-left h2 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-right ul li {
+    list-style: none;
+}
+.nav-right ul li a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services {
+  position: relative;
+  transition: all .5s;
+
+}
+
+.nav-right .toggle {
+  display: none;
+  transition: all .5s linear;
+}
+
+.toggle.active {
+  display: flex;
+  position: absolute;
+  width: 20rem;
+  top: 100%;
+  left: 0;
+  margin-top: 1rem;
+  background-color: rgb(181, 190, 236);
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all .5s linear;
+}
+
+.toggle li {
+  margin: 1rem 0;
+}
+
+.toggle li a {
+  font-size: 1.1rem;
+}  
+
+/* SLIDER BAR */
+
+/* .active{
+  width: 1500px; 
+  height: 450px;
+} */
+
+/* CSS for the carousel control buttons */
+/* CSS for the carousel control buttons */
+
+
+/* CSS for the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Set the width of the buttons */
+  height: 40px; /* Set the height of the buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the buttons */
+  border-radius: 50%; /* Make the buttons circular */
+  top: 50%; /* Position the buttons vertically at the middle of the carousel */
+  transform: translateY(-50%); /* Center the buttons vertically */
+  z-index: 1; /* Ensure the buttons are above the carousel images */
+}
+
+.carousel-control-prev {
+  left: 20px; /* Position the previous button on the left side */
+}
+
+.carousel-control-next {
+  right: 20px; /* Position the next button on the right side */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px; /* Set the width of the arrow icons */
+  height: 20px; /* Set the height of the arrow icons */
+  background-color: #fff; /* Set the color of the arrow icons */
+  border-radius: 50%; /* Make the arrow icons circular */
+  position: absolute; /* Position the arrow icons absolutely within the buttons */
+  top: 50%; /* Center the arrow icons vertically */
+  transform: translate(-50%, -50%); /* Center the arrow icons both horizontally and vertically */
+}
+
+/* Optional: Hover effect for the buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Set the background color when hovering */
+  transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #ccc; /* Set the color of the arrow icons when hovering */
+  transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+
+
+
+
+
+
+
+
+
+
